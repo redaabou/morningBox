@@ -1,0 +1,39 @@
+version: "3.8"
+
+services:
+  backend:
+    container_name: backend
+    # image: reda/backend
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    env_file:
+      - ./backend/.env
+    ports:
+      - "5000:5000"
+    networks:
+      - node-webapp-network
+
+  frontend:
+    container_name: frontend
+    # image: reda/frontend
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+   
+    ports:
+      - "3000:3000"
+
+    depends_on:
+      - backend
+
+    stdin_open: true
+
+    tty: true  
+      
+    networks:
+      - node-webapp-network    
+
+networks:
+  node-webapp-network:
+    driver: bridge
