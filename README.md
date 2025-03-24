@@ -2,8 +2,8 @@
 A complete digital solution for MorningBox cafeterias featuring customer menus, manager dashboards, and admin controls.
 
 ## 📚 Table of Contents
-- [🖼️ App Screenshots](#-app-screenshots
-- [🚀 Features](#-features
+- [🖼️ App Screenshots](#-app-screenshots)
+- [🚀 Features](#-features)
 - [🛠 Tech Stack](#-tech-stack)
 - [📦 Installation](#-installation)
 - [📝 License](#-license)
