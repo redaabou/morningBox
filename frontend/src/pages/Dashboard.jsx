@@ -6,7 +6,7 @@ import CafeteriaCard from '../components/CafeteriaCard';
 import AssignManager from '../components/AssignManager';
 
 function Dashboard() {
-  const [activeComponent, setActiveComponent] = useState('');
+  const [activeComponent, setActiveComponent] = useState('AddMenuForm');
 
   const handleComponentClick = (component) => {
     setActiveComponent(component);
@@ -87,7 +87,7 @@ function Dashboard() {
           </li>
         </ul>
       </nav>
-
+      {/* layout */}
       <main className="lg:ml-60 sm:m-6 md:ml-28 p-4 w-full">
         {activeComponent === 'AddMenuForm' && <AddMenuForm />}
         {activeComponent === 'MenusList' && <MenusList />}

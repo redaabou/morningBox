@@ -5,7 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 const Toastify = (message, type)=> {
     if(type === 'success'){
         return toast.success(message, {
-            position: "top-center",
+            position: "top-right",
             autoClose: 5000,
             hideProgressBar: false,
             closeOnClick: true,

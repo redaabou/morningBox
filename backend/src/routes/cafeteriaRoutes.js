@@ -2,6 +2,8 @@ import express from 'express';
 import { getAllCafeterias, getCafeteria, createCafeteria, updateCafeteria, deleteCafeteria, assignManager, getCafeteriasByGerant } from '../controllers/cafeteriaController.js';
 import { protect, restrictTo } from '../middlewares/authMiddleware.js';
 import { uploadMiddleware } from '../middlewares/upload.js';
+// import { cafeteriaSchema } from '../Validators/cafeteriaValidator.js';
+// import { validateRequest } from '../middlewares/validationMiddleware.js';
 
 const router = express.Router();
 

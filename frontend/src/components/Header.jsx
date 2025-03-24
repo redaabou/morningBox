@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { useSelector, useDispatch } from 'react-redux';
@@ -9,7 +9,6 @@ export default function Header() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const { user } = useSelector((state) => state.auth);
-
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -41,32 +40,23 @@ export default function Header() {
                 <img src="https://freesvg.org/img/chef-restaurant-logo-publicdomainvectors.png" alt="logo" className='w-28' />
               </a>
             </li>
-            <li className='max-lg:border-b border-gray-300 max-lg:py-3 px-3'>
-              <a href='/' className='hover:text-rose-600 text-rose-600 block font-semibold text-[15px]'>Home</a>
-            </li>
-            <li className='max-lg:border-b border-gray-300 max-lg:py-3 px-3'>
-              <a href='/team' className='hover:text-rose-600 text-gray-500 block font-semibold text-[15px]'>Team</a>
-            </li>
-            <li className='max-lg:border-b border-gray-300 max-lg:py-3 px-3'>
-              <a href='/feature' className='hover:text-rose-600 text-gray-500 block font-semibold text-[15px]'>Feature</a>
-            </li>
-            <li className='max-lg:border-b border-gray-300 max-lg:py-3 px-3'>
-              <a href='/blog' className='hover:text-rose-600 text-gray-500 block font-semibold text-[15px]'>Blog</a>
-            </li>
-            <li className='max-lg:border-b border-gray-300 max-lg:py-3 px-3'>
-              <a href='/about' className='hover:text-rose-600 text-gray-500 block font-semibold text-[15px]'>About</a>
-            </li>
-            <li className='max-lg:border-b border-gray-300 max-lg:py-3 px-3'>
-              <a href='/contact' className='hover:text-rose-600 text-gray-500 block font-semibold text-[15px]'>Contact</a>
-            </li>
           </ul>
         </div>
 
         <div className='flex max-lg:ml-auto space-x-3'>
           {user ? (
-            <button onClick={handleLogout} className='px-3 py-2 text-xs sm:px-4 sm:py-2 sm:text-sm rounded-full font-bold text-white border-2 border-rose-600 bg-rose-600 transition-all ease-in-out duration-300 hover:bg-transparent hover:text-rose-600'>
-              Logout
-            </button>
+            <>
+              <button onClick={handleLogout} className='px-3 py-2 text-xs sm:px-4 sm:py-2 sm:text-sm rounded-full font-bold text-white border-2 border-rose-600 bg-rose-600 transition-all ease-in-out duration-300 hover:bg-transparent hover:text-rose-600'>
+                Logout
+              </button>
+              {(user.role === 'gerant' || user.role === 'superadmin') && (
+                <a href={user.role === 'gerant' ? '/dashboard-gerant' : '/dashboard'}>
+                  <button className='px-3 py-2 text-xs sm:px-4 sm:py-2 sm:text-sm rounded-full font-bold text-white border-2 border-rose-600 bg-rose-600 transition-all ease-in-out duration-300 hover:bg-transparent hover:text-rose-600'>
+                    Dashboard
+                  </button>
+                </a>
+              )}
+            </>
           ) : (
             <>
               <a href='/login'>

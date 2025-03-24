@@ -77,3 +77,38 @@ export const fetchGerantCafeteria = (gerantId) => async (dispatch) => {
   }
 
 }
+
+
+export const deleteCafeteria = (id) => async (dispatch) => {
+  try {
+    const token = localStorage.getItem('token');
+    const config = {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    };
+    dispatch({ type: 'DELETE_CAFETERIA_REQUEST' });
+    const { data } = await api.delete(`/cafeterias/${id}`, config);
+    dispatch({ type: 'DELETE_CAFETERIA_SUCCESS', payload: data });
+  } catch (error) {
+    dispatch({ type: 'DELETE_CAFETERIA_FAIL', payload: error.response.data.message });
+  }
+};
+
+
+export const updateCafeteria = (id, formData) => async (dispatch) => {
+  try {
+    const token = localStorage.getItem('token');
+    const config = {
+      headers: {
+        'Content-Type': 'multipart/form-data',
+        Authorization: `Bearer ${token}`,
+      },
+    };
+    dispatch({ type: 'UPDATE_CAFETERIA_REQUEST' });
+    const { data } = await api.put(`/cafeterias/${id}`, formData, config);
+    dispatch({ type: 'UPDATE_CAFETERIA_SUCCESS', payload: data });
+  } catch (error) {
+    dispatch({ type: 'UPDATE_CAFETERIA_FAIL', payload: error.response.data.message });
+  }
+};

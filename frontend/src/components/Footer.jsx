@@ -7,10 +7,9 @@ function Footer() {
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
 
           <div class="lg:col-span-2">
-            <a href='javascript:void(0)'><img src="https://readymadeui.com/readymadeui-white.svg" alt="logo"
+            <a href='javascript:void(0)'><img src="https://freesvg.org/img/chef-restaurant-logo-publicdomainvectors.png" alt="logo"
               class='w-44 mb-8' /></a>
-            <p class="text-gray-300 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
+             <span className='text-gray font-bold text-base sm:text-xs md:text-base lg:text-xl xl:text-2xl ml-2'>Morningbox</span>
           </div>
 
           <div>
@@ -60,7 +59,6 @@ function Footer() {
           <div>
             <h4 class="text-lg font-semibold mb-8 text-white">Contact Us</h4>
             <div class="space-y-4">
-              <p class="text-gray-300 text-sm">123 Street, City Name</p>
               <p class="text-gray-300 text-sm">contact@example.com</p>
               <p class="text-gray-300 text-sm">+1 234 567 890</p>
             </div>
@@ -70,7 +68,7 @@ function Footer() {
       </div>
 
       <div class="text-center py-5 bg-rose-600">
-        <p class='text-gray-300 text-sm'>© ReadymadeUI. All rights reserved.</p>
+        <p class='text-gray-300 text-sm'>©All rights reserved.</p>
       </div>
     </footer>
   )
