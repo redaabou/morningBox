@@ -5,10 +5,13 @@ Here are some of the screens you can expect to see in the MorningBox app:
 
 - **Homepage**: View Cafeterias and Menus
     ![Homepage](/frontend/public/MorningBox_Home.png)
+
 - **Cafeteria Menu**: Browse Items and Prices
     ![Cafeteria Menu](/frontend/public/MorningBox_Cafe.png)
+
 - **Manager Dashboard**: Menu Management
     ![Manager Dashboard](/frontend/public/MorningBox_Dash.png)
+    
 - **Super Admin Dashboard**: Manage Cafeterias
     ![Super Admin Dashboard](/frontend/public/list%20menu.png)
 
@@ -71,5 +74,10 @@ cd backend && npm run dev
 
 # Terminal 2:
 cd frontend && npm start
+
+###📜 License
+MIT © MorningBox
+
+<div align="center"> <a href="#"><img src="https://img.shields.io/badge/Deploy-Live-brightgreen"></a> <a href="#"><img src="https://img.shields.io/github/issues/yourusername/morningbox"></a> </div>
 
 
