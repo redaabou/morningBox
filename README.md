@@ -1,5 +1,5 @@
 # ☕ MorningBox Cafeteria System
-A complete digital solution for MorningBox cafeterias featuring customer menus, manager dashboards, and admin controls.
+**🚀 Streamline your MorningBox cafeteria operations with a powerful dashboard for menu management, pricing updates, and real-time availability control.**
 
 ## 📚 Table of Contents
 - [🖼️ App Screenshots](#-app-screenshots)
