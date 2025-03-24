@@ -74,10 +74,8 @@ cd backend && npm run dev
 
 # Terminal 2:
 cd frontend && npm start
-
-###📜 License
+```
+## 📝 License
 MIT © MorningBox
 
-<div align="center"> <a href="#"><img src="https://img.shields.io/badge/Deploy-Live-brightgreen"></a> <a href="#"><img src="https://img.shields.io/github/issues/yourusername/morningbox"></a> </div>
-
-
+<div align="center"> <a href="#"><img src="https://img.shields.io/badge/Deploy-Live-brightgreen"></a> <a href="#"><img src="https://img.shields.io/github/issues/redaabou/morningbox"></a> </div>
