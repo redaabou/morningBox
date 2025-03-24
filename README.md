@@ -94,3 +94,12 @@ cd frontend && npm start
 MIT © MorningBox
 
 <div align="center"> <a href="#"><img src="https://img.shields.io/badge/Deploy-Live-brightgreen"></a> <a href="#"><img src="https://img.shields.io/github/issues/redaabou/morningbox"></a> </div>
+
+---
+
+## 📬 Contact
+
+For any questions, feel free to contact me:
+
+- **Email**: [aboulouafareda@gmail.com]
+- **LinkedIn**: [Reda Aboulouafa](www.linkedin.com/in/reda-aboulouafa-993a11220)
