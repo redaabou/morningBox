@@ -11,9 +11,11 @@ Here are some of the screens you can expect to see in the MorningBox app:
 
 - **Manager Dashboard**: Menu Management
     ![Manager Dashboard](/frontend/public/MorningBox_Dash.png)
+    ![Manager Dashboard](/frontend/public/list%20menu.png)
     
 - **Super Admin Dashboard**: Manage Cafeterias
-    ![Super Admin Dashboard](/frontend/public/list%20menu.png)
+    ![Super Admin Dashboard](/frontend/public/add%20cafe.png)
+    ![Super Admin Dashboard](/frontend/public/Assign%20Manager%20to%20Cafeteria.png)
 
 
 A complete digital solution for MorningBox cafeterias featuring customer menus, manager dashboards, and admin controls.
