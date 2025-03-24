@@ -1,4 +1,13 @@
 # ☕ MorningBox Cafeteria System
+A complete digital solution for MorningBox cafeterias featuring customer menus, manager dashboards, and admin controls.
+
+## 📚 Table of Contents
+- [🖼️ App Screenshots](#-app-screenshots
+- [🚀 Features](#-features
+- [🛠 Tech Stack](#-tech-stack)
+- [📦 Installation](#-installation)
+- [📝 License](#-license)
+
 ## 🖼️ App Screenshots
 
 Here are some of the screens you can expect to see in the MorningBox app:
@@ -22,7 +31,7 @@ Here are some of the screens you can expect to see in the MorningBox app:
         ![Super Admin Dashboard](/frontend/public/Assign%20Manager%20to%20Cafeteria.png)
 
 
-A complete digital solution for MorningBox cafeterias featuring customer menus, manager dashboards, and admin controls.
+
 
 ## 🚀 Features
 
