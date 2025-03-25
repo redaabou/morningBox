@@ -1,4 +1,4 @@
-# ☕ MorningBox Cafeteria System
+# ☕ MorningBox Cafeteria System 
 **🚀 Streamline your MorningBox cafeteria operations with a powerful dashboard for menu management, pricing updates, and real-time availability control.**
 
 ## 📚 Table of Contents
